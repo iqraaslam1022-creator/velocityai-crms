@@ -20,7 +20,7 @@ export default function Login() {
     setError('');
     setLoading(true);
     try {
-      await base44.auth.login({ email, password });
+      await base44.auth.loginViaEmailPassword(email, password);
       navigate('/');
     } catch (err) {
       setError(err.message || 'Invalid email or password');
