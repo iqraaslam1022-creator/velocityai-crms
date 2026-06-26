@@ -1,14 +1,4 @@
-import { createClient } from '@base44/sdk';
-import { appParams } from '@/lib/app-params';
+// Base44 removed.
+// This file is kept temporarily so old imports don't crash.
 
-const { appId, token, functionsVersion, appBaseUrl } = appParams;
-
-//Create a client with authentication required
-export const base44 = createClient({
-  appId,
-  token,
-  functionsVersion,
-  serverUrl: appBaseUrl,
-  requiresAuth: false,
-  appBaseUrl
-});
+export const base44 = {};
